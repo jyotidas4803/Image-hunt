@@ -1,18 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-
-
+import { useState } from 'react';
+import Card from './Card.jsx';
+import './index.css';
 function App() {
-
-
   return (
-    <>
-      <p>
-        Click on the Vite and React logos to learn more
-      </p>
-      <button className="btn btn-primary">Button</button>
-    </>
-  )
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+      <Card />
+      <button className="btn btn-primary mt-4 w-80 rounded">Select</button>
+
+    </div>
+  );
 }
 
-export default App
+export default App;
